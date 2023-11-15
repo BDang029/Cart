@@ -31,12 +31,6 @@
             </form></td>
     </tr>
     </c:forEach>
-     <tr>
-        <th>GiamGia</th>
-        <th><input type=text name="giamgia" 
-               value="<c:out value='${item.giamgia}'/>" id="giamgia"></th>
-        <th>&nbsp;</th>
-    </tr>
 
     
 </table>

@@ -15,6 +15,7 @@
     <th>Description</th>
     <th>Price</th>
     <th>Amount</th>
+    <th>GiamGia</th>
     <th></th>
   </tr>
 
@@ -50,6 +51,7 @@
             
         </form>
     </td>
+    
   </tr>
 </c:forEach>
 </table>
@@ -66,10 +68,7 @@
   <input type="hidden" name="action" value="checkout">
   <input type="submit" value="Checkout">
 </form>
-<form action="" method="post">
-  <input type="hidden" name="action" value="giamgia">
-  <input type="submit" value="Giamgia">
-</form>
+
 
 </body>
 </html>

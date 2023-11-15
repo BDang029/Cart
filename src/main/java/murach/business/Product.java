@@ -38,7 +38,7 @@ public class Product implements Serializable {
     public double getPrice() {
         return price;
     }
-
+    
     public String getPriceCurrencyFormat() {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
         return currency.format(price);
