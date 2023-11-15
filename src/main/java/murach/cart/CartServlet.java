@@ -36,6 +36,10 @@ public class CartServlet extends HttpServlet {
             if (cart == null) {
                 cart = new Cart();
             }
+            else {
+                int previousQuantity = LineItem.getQuantity(); // Giả sử có phương thức getQuantity() trong lớp Cart
+                cart.setQuantity(quantity); // Cập nhật quantity mới
+            }
 
             //if the user enters a negative or invalid quantity,
             //the quantity is automatically reset to 1.

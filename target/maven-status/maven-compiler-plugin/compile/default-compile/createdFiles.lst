@@ -3,6 +3,5 @@ com\mycompany\ch09_ex2_cart_maven_final\JakartaRestConfiguration.class
 murach\business\Product.class
 murach\cart\ProductsServlet.class
 murach\business\Cart.class
-murach\cart\CartServlet.class
 murach\business\LineItem.class
 murach\data\ProductIO.class
