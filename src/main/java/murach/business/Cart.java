@@ -39,8 +39,7 @@ public class Cart implements Serializable {
     public int getCount() {
         return items.size();
     }
-
-    public void addItem(LineItem item) {
+     public void addItem(LineItem item) {
         String code = item.getProduct().getCode();
         int quantity = item.getQuantity();
         for (int i = 0; i < items.size(); i++) {
@@ -57,6 +56,7 @@ public class Cart implements Serializable {
         }
         items.add(item);
     }
+
 
     public void removeItem(LineItem item) {
         String code = item.getProduct().getCode();
