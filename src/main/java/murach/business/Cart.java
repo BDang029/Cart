@@ -47,4 +47,8 @@ public class Cart implements Serializable {
             }
         }
     }
+    public double Giamgia(LineItem item)
+    {
+       return item.getTotal()*0.2;
+    }
 }
