@@ -66,6 +66,10 @@
   <input type="hidden" name="action" value="checkout">
   <input type="submit" value="Checkout">
 </form>
+<form action="" method="post">
+  <input type="hidden" name="action" value="giamgia">
+  <input type="submit" value="Giamgia">
+</form>
 
 </body>
 </html>
