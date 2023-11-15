@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
-    <h1>Checkout isn't finished yet</h1>
+    <h1>Checkout isn't finished yet lalala</h1>
     <p>Click on the browser's Back button to continue.</p>
 </body>
 </html>
