@@ -34,7 +34,7 @@
     <td>${item.product.priceCurrencyFormat}</td>
     <td>${item.totalCurrencyFormat}</td>
     <td>
-      <form action="checkout" method="post">
+      <form action="" method="post">
         <input type="hidden" name="productCode" 
                value="<c:out value='${item.product.code}'/>">
         <input type="hidden" name="quantity" 
@@ -57,12 +57,12 @@
 <p><b>To change the quantity</b>, enter the new quantity 
       and click on the Update button.</p>
   
-<form action="" method="post">
+<form action="shop" method="post">
   <input type="hidden" name="action" value="shop">
   <input type="submit" value="Continue Shopping">
 </form>
 
-<form action="" method="post">
+<form action="checkout" method="post">
   <input type="hidden" name="action" value="checkout">
   <input type="submit" value="Checkout">
 </form>

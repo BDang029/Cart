@@ -19,12 +19,12 @@ public class CartServlet extends HttpServlet {
         // get current action
         String action = request.getParameter("action");
         if (action == null) {
-            action = "cart";  // default action
+            action = "action";  // default action
         }
 
         // perform action and set URL to appropriate page
         String url = "/index.jsp";
-        if (action.equals("shop")) {            
+        if (action.equals("shop")) {
             url = "/index.jsp";    // the "index" page
         } 
         else if (action.equals("cart")) {
@@ -37,8 +37,7 @@ public class CartServlet extends HttpServlet {
                 cart = new Cart();
             }
             else {
-                int previousQuantity = LineItem.getQuantity(); // Giả sử có phương thức getQuantity() trong lớp Cart
-                cart.setQuantity(quantity); // Cập nhật quantity mới
+               
             }
 
             //if the user enters a negative or invalid quantity,
