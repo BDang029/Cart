@@ -36,9 +36,7 @@ public class CartServlet extends HttpServlet {
             if (cart == null) {
                 cart = new Cart();
             }
-            else {
-               
-            }
+            
 
             //if the user enters a negative or invalid quantity,
             //the quantity is automatically reset to 1.

@@ -22,7 +22,7 @@
 <c:forEach var="item" items="${cart.items}">
   <tr>
     <td>
-      <form action="shop" method="post">
+      <form action="" method="post">
         <input type="hidden" name="productCode" 
                value="<c:out value='${item.product.code}'/>">
         <input type=text name="quantity" 
