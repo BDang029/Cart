@@ -22,8 +22,7 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     
     <c:forEach var="item" items="${sessionScope.products}">
-        <tr>
-        <td><c:out value='${item.description}'/></td>
+        <td>
         <td><c:out value='${item.description}'/></td>
         <td class="right"><c:out value='${item.price}'/></td>
         <td><form action="cart" method="post">

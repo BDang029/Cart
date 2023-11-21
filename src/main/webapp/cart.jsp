@@ -15,7 +15,6 @@
     <th>Description</th>
     <th>Price</th>
     <th>Amount</th>
-    <th>GiamGia</th>
     <th></th>
   </tr>
 
@@ -50,6 +49,9 @@
             <input type="submit" value="Remove Item using URL rewriting">
             
         </form>
+        <label class="pad_top">GiamGia:</label>
+        <input type="text" name="giamgia" 
+               value=${item.giamgia}><br>
     </td>
     
   </tr>

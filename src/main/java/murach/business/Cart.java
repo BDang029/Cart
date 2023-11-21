@@ -19,7 +19,7 @@ public class Cart implements Serializable {
         return items.size();
     }
     
-    
+   
     public void addItem(LineItem item) {
         String code = item.getProduct().getCode();
         int quantity = item.getQuantity();
@@ -47,6 +47,10 @@ public class Cart implements Serializable {
                 return;
             }
         }
+    }
+    public double Giamgia(LineItem item)
+    {
+        return item.getTotal();
     }
  
 }
