@@ -29,16 +29,16 @@
                 <input type="hidden" name="productCode" value="<c:out value='${item.code}'/>">
                 <input type="submit" value="Add To Cart">
             </form></td>
+           <label class="pad_top">Giamgia:</label>
+  <input required type="text" name="productCode" 
+     value=${iteam.giamgia}><br>       
+   <input type="submit" value="Giam gia ngay" >
          
     </tr>
     </c:forEach>
 
     
 </table>
-  <label class="pad_top">Giamgia:</label>
-  <input required type="text" name="giamgia" 
-     value=${iteam.giamgia}><br>       
-   <input type="submit" value="Giam gia ngay" class="margin_left">
   
 </body>
 </html>
