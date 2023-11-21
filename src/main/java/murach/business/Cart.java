@@ -48,22 +48,4 @@ public class Cart implements Serializable {
             }
         }
     }
-    public void Giamgia(LineItem item){
-        String code = item.getProduct().getCode();
-        double giamgia = item.getGiamgia();
-        for (int i = 0; i < items.size(); i++) {
-            LineItem lineItem = items.get(i);
-            if (lineItem.getProduct().getCode().equals(code)) {
-                if (lineItem.getGiamgia() != 1 && giamgia != lineItem.getGiamgia()) {
-                    lineItem.setGiamgia(lineItem.getGiamgia() + giamgia);
-                }
-                else {
-                    lineItem.setGiamgia(giamgia);
-                }
-                return;
-            }
-        }
-        items.add(item);
-    }
- 
 }

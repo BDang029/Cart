@@ -64,19 +64,17 @@ public class CartServlet extends HttpServlet {
             LineItem lineItem = new LineItem();
             lineItem.setProduct(product);
             lineItem.setQuantity(quantity);
-            lineItem.setGiamgia(giamgia);
             if (quantity > 0) {
                 cart.addItem(lineItem);
             } else if (quantity == 0) {
                 cart.removeItem(lineItem);
             }
             if (giamgia > 0) {
-                cart.Giamgia(lineItem);
+                giamgia = 1.0;
             }
-            else
-            {
-                
-            }
+            
+            lineItem.setGiamgia(giamgia);
+
             
 
             session.setAttribute("cart", cart);
