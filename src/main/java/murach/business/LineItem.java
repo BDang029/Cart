@@ -7,7 +7,6 @@ public class LineItem implements Serializable {
 
     private Product product;
     private int quantity;
-    double giamgia;
     
     public LineItem() {}
     public void setProduct(Product p) {
@@ -25,16 +24,10 @@ public class LineItem implements Serializable {
     public int getQuantity() {
         return quantity;
     }
-     public void setgiamgia(double giamgia) {
-        this.giamgia = giamgia;
-    }
 
-    public double getgiamgia() {
-        return giamgia;
-    }
 
     public double getTotal() {
-        double total = product.getPrice() * quantity * giamgia;
+        double total = product.getPrice() * quantity;
         return total;
     }
 
