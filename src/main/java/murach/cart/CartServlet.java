@@ -29,6 +29,7 @@ public class CartServlet extends HttpServlet {
         } 
         else if (action.equals("cart")) {
             String productCode = request.getParameter("productCode");
+            String giamgiaString = request.getParameter("giamgia");
             String quantityString = request.getParameter("quantity");
 
             HttpSession session = request.getSession();
@@ -40,6 +41,7 @@ public class CartServlet extends HttpServlet {
             //if the user enters a negative or invalid quantity,
             //the quantity is automatically reset to 1.
             int quantity;
+            double giamgia;
             try {
                 quantity = Integer.parseInt(quantityString);
                 if (quantity < 0) {
@@ -48,18 +50,30 @@ public class CartServlet extends HttpServlet {
             } catch (NumberFormatException nfe) {
                 quantity = 1;
             }
-
+              try {
+                giamgia = Double.parseDouble(giamgiaString);
+                if (giamgia < 0 && giamgia > 1) {
+                    giamgia = 1;
+                }
+            } catch (NumberFormatException nfe) {
+                giamgia = 1;
+            }
             String path = sc.getRealPath("/WEB-INF/products.txt");
             Product product = ProductIO.getProduct(productCode, path);
 
             LineItem lineItem = new LineItem();
             lineItem.setProduct(product);
             lineItem.setQuantity(quantity);
+            lineItem.setGiamgia(giamgia);
             if (quantity > 0) {
                 cart.addItem(lineItem);
             } else if (quantity == 0) {
                 cart.removeItem(lineItem);
             }
+            if (giamgia > 0) {
+                cart.Giamgia(lineItem);
+            }
+            
 
             session.setAttribute("cart", cart);
             url = "/cart.jsp";

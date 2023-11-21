@@ -8,7 +8,6 @@ public class Product implements Serializable {
     private String code;
     private String description;
     private double price;
-    private double giamgia;
     public Product() {
         code = "";
         description = "";
@@ -38,16 +37,8 @@ public class Product implements Serializable {
     public double getPrice() {
         return price;
     }
-    public void setgiamgia(double giamgia) {
-        this.giamgia = giamgia;
-    }
-
-    public double getgiamgia() {
-        return giamgia;
-    }
-    
     public String getPriceCurrencyFormat() {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
-        return currency.format(price*giamgia);
+        return currency.format(price);
     }
 }
