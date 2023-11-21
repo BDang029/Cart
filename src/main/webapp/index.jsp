@@ -35,10 +35,6 @@
     
     
 </table>
-      <h1> </h1>
-    <label class="pad_top">Giamgia:</label>
-    <input required type="text" name="productCode" value=${item.giamgia}><br>       
-    <input type="submit" value="Giam gia ngay" >
 
 </body>
 </html>

@@ -29,7 +29,7 @@
                value="<c:out value='${item.quantity}'/>" id="quantity">
         <input type="submit" value="Update">
         <input type=text name="giamgia" 
-               value="<c:out value='${item.giamgia}'/>" id="quantity">
+               value="<c:out value='${item.giamgia}'/>" id="giamgia">
         <input type="submit" value="Update">
       </form>
     </td>

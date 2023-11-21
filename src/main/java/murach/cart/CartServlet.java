@@ -73,6 +73,10 @@ public class CartServlet extends HttpServlet {
             if (giamgia > 0) {
                 cart.Giamgia(lineItem);
             }
+            else
+            {
+                
+            }
             
 
             session.setAttribute("cart", cart);
