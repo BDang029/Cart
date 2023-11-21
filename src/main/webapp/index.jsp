@@ -32,7 +32,7 @@
          
     </tr>
     <label class="pad_top">Giamgia:</label>
-    <input required type="text" name="productCode" value=${iteam.giamgia}><br>       
+    <input required type="text" name="giamgia" value=${item.giamgia}><br>       
     <input type="submit" value="Giam gia ngay" >
     
     </c:forEach>
