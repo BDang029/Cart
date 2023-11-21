@@ -31,13 +31,12 @@
             </form></td>
          
     </tr>
-        <label class="pad_top">GiamGia:</label>
-    <input type="text" name="giamgia" 
-        value=${item.giamgia}><br>
     </c:forEach>
 
     
 </table>
-        
+  <label class="pad_top">Email:</label>
+  <input required type="text" name="giamgia" 
+     value=${iteam.giamgia}><br>
 </body>
 </html>

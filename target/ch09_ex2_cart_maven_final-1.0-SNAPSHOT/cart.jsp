@@ -50,9 +50,6 @@
             
         </form>
     </td>
-    <label class="pad_top">GiamGia:</label>
-    <input type="text" name="giamgia" 
-        value=${item.giamgia}><br>
   </tr>
 </c:forEach>
 </table>
