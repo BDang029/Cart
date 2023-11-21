@@ -34,7 +34,7 @@ public class LineItem implements Serializable {
     }
 
     public double getTotal() {
-        double total = product.getPrice() * quantity * giamgia;
+        double total = product.getPrice() * quantity * 0.5;
         return total;
     }
 
