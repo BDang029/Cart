@@ -36,8 +36,10 @@
     
 </table>
       <h1> </h1>
+    <c:forEach var="item" items="${sessionScope.products}">
     <label class="pad_top">Giamgia:</label>
     <input required type="text" name="productCode" value=${item.giamgia}><br>       
     <input type="submit" value="Giam gia ngay" >
+     </c:forEach>
 </body>
 </html>
