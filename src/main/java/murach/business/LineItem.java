@@ -35,13 +35,13 @@ public class LineItem implements Serializable {
     }
 
     public double getTotal() {
-        double total = product.getPrice() * quantity;
+        double total = product.getPrice();
         return total;
     }
 
     public String getTotalCurrencyFormat() {
         NumberFormat currency = NumberFormat.getCurrencyInstance();
-        return currency.format(this.getTotal());
+        return currency.format(this.getTotal()*this.giamgia);
     }
 
 }

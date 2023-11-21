@@ -28,6 +28,9 @@
         <input type=text name="quantity" 
                value="<c:out value='${item.quantity}'/>" id="quantity">
         <input type="submit" value="Update">
+        <input type=text name="giamgia" 
+               value="<c:out value='${item.giamgia}'/>" id="giamgia">
+        <input type="submit" value="Update">
       </form>
     </td>
     <td><c:out value='${item.product.description}'/></td>
@@ -39,6 +42,8 @@
                value="<c:out value='${item.product.code}'/>">
         <input type="hidden" name="quantity" 
                value="0">
+        <input type="hidden" name="giamgia" 
+               value="1">
         <input type="submit" value="Remove Item using hidden fields">
         
         
