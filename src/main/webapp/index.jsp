@@ -35,8 +35,10 @@
 
     
 </table>
-  <label class="pad_top">Email:</label>
+  <label class="pad_top">Giamgia:</label>
   <input required type="text" name="giamgia" 
-     value=${iteam.giamgia}><br>
+     value=${iteam.giamgia}><br>       
+   <input type="submit" value="Giam gia ngay" class="margin_left">
+  
 </body>
 </html>
