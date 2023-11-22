@@ -27,7 +27,6 @@
                value="<c:out value='${item.product.code}'/>">
         <input type=text name="quantity" 
                value="<c:out value='${item.quantity}'/>" id="quantity">
-        <input type="submit" value="Update">
         <input type=text name="giamgia" 
                value="<c:out value='${item.giamgia}'/>" id="giamgia">
         <input type="submit" value="Update">
@@ -37,13 +36,11 @@
     <td>${item.product.priceCurrencyFormat}</td>
     <td>${item.totalCurrencyFormat}</td>
     <td>
-      <form action="" method="post">
+      <form action="cart" method="post">
         <input type="hidden" name="productCode" 
                value="<c:out value='${item.product.code}'/>">
         <input type="hidden" name="quantity" 
                value="0">
-        <input type="hidden" name="giamgia" 
-               value="1">
         <input type="submit" value="Remove Item using hidden fields">
         
         
@@ -72,6 +69,9 @@
   <input type="submit" value="Checkout">
 </form>
 
+<br> 
+ 
+<a class = "returnHome" href="https://thangmainpage-f659678d7b24.herokuapp.com/#listEx"><i class="fa-solid fa-house"></i> &#127968 Back To Main Page</a>
 
 </body>
 </html>
